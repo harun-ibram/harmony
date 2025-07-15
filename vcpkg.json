@@ -1,0 +1,9 @@
+{
+  "name": "harmony",
+  "version": "0.1.0",
+  "dependencies": [
+    "fmt",
+    "boost-system",
+    "qtbase"
+  ]
+}

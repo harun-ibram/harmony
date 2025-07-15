@@ -21,5 +21,6 @@ public:
 private:
     Ui::MainWindow *ui;
     void onSendButtonClicked();
+    void onConnectClicked();
 };
 #endif // MAINWINDOW_H

@@ -1,0 +1,16 @@
+Implement server and client sockets.
+Poll for events on sockets and on message send.
+
+
+Future:
+Custom profiles (username, pfp, description)
+Friends List
+Pfp caching for chat
+
+File sharing
+Video streaming
+
+Group chats
+Servers
+
+Move to a server-based service format

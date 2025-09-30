@@ -25,9 +25,7 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
 private:
-    QTcpSocket *socket = nullptr;
-    QTcpServer *server = nullptr;
-    QTcpSocket *clientSocket = nullptr;
+    QTcpSocket *server = nullptr;
     Ui::MainWindow *ui;
     void onSendButtonClicked();
     void onConnectClicked();

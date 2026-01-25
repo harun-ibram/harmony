@@ -1,0 +1,3 @@
+add_library(harmony_protocol INTERFACE)
+target_include_directories(harmony_protocol INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_compile_features(harmony_protocol INTERFACE cxx_std_20)

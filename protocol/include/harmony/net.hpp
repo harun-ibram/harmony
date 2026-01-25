@@ -19,10 +19,9 @@ namespace harmony {
         // Send length
         u_int32_t length = message.size();
 
-        if (send(socket_fd, &length, sizeof(length), 0)) {
+        if (send(socket_fd, &length, sizeof(length), 0) <= 0) {
             return false;
         }
-
 
         // Send actual message
         size_t sent_size = 0;

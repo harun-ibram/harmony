@@ -49,6 +49,7 @@ int main()
 
     if (!harmony::send_message(fd, msg))
     {
+        std::cout << "OH ITS BAD\n";
         perror("send");
         close(fd);
         return -1;

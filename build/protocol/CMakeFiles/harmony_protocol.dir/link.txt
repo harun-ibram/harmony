@@ -1,2 +1,0 @@
-/usr/bin/ar qc libharmony_protocol.a CMakeFiles/harmony_protocol.dir/src/protocol.cpp.o
-/usr/bin/ranlib libharmony_protocol.a

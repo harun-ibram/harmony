@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/harmony_server.dir/src/main.cpp.o -o harmony_server  ../protocol/libharmony_protocol.a 

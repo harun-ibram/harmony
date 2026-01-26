@@ -16,6 +16,9 @@ int main()
     const char *SERVER_IP = "127.0.0.1";
     const int PORT = 7727;
     int ret;
+    std::string username;
+
+    std::cin >> username;
 
     int fd = socket(AF_INET, SOCK_STREAM, 0);
     if (fd < 0)
@@ -45,8 +48,9 @@ int main()
 
     std::cout << "Connected to " << SERVER_IP << ":" << PORT << "\n";
 
-    std::string msg = harmony::proto::make_login("sunny");
+    std::string msg = harmony::proto::make_login(username);
 
+    sleep(3);
     if (!harmony::send_message(fd, msg))
     {
         std::cout << "OH ITS BAD\n";

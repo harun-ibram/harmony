@@ -193,13 +193,38 @@ std::optional<Message> parse(std::string_view json)
     type_pos += key.size();
 
     size_t type_end = json.find('"', type_pos);
-    if (type_end == std::string_view::npos) {
+    if (type_end == std::string_view::npos)
+    {
         return std::nullopt;
     }
 
     std::string_view type_str = json.substr(type_pos, type_end - type_pos);
 
     msg.type = type_from_string(type_str);
+
+    std::string json_str(json);
+    switch (msg.type)
+    {
+    case harmony::proto::Type::Login:
+        parseLogin(json_str, msg);
+        break;
+    case harmony::proto::Type::Chat:
+        parseChat(json_str, msg);
+        break;
+    case harmony::proto::Type::Event:
+        // parseEvent(json_str, msg);
+        break;
+    case harmony::proto::Type::Error:
+        // parseError(json_str, msg);
+        break;
+    case harmony::proto::Type::Join:
+        // parseJoin(json_str, msg);
+        break;
+    case harmony::proto::Type::Unknown:
+        break;
+    default:
+        break;
+    }
     return msg;
 }
 

@@ -1,0 +1,73 @@
+# ------------------------------------------------------------
+# Build outputs (CMake)
+# ------------------------------------------------------------
+/build/
+/out/
+/cmake-build-*/
+
+# CMake-generated files that may appear outside build dirs
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+DartConfiguration.tcl
+*.ninja
+*.ninja_deps
+*.ninja_log
+
+# Local-only CMake preset overrides
+CMakeUserPresets.json
+
+# ------------------------------------------------------------
+# vcpkg (manifest mode installs)
+# ------------------------------------------------------------
+/vcpkg_installed/
+
+# ------------------------------------------------------------
+# Visual Studio / MSBuild
+# ------------------------------------------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.ipch
+*.tlog
+*.lastbuildstate
+
+# Build artifacts
+*.obj
+*.o
+*.lo
+*.a
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.map
+
+# ------------------------------------------------------------
+# VS Code (optional; keep workspace configs if you commit them)
+# ------------------------------------------------------------
+# .vscode/
+
+# ------------------------------------------------------------
+# OS junk
+# ------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+*.log
